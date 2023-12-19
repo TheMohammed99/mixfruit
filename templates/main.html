@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+        {% comment %} import app_name and page title from the view {% endcomment %}
+        <title>{{ app_name }} - {{ title }}</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        {% comment %} Favicons {% endcomment %}
+        <link href="{% static "assets/logo.png" %}" rel="icon">
+        <link href="{% static "assets/logo.png" %}" rel="apple-touch-icon">
+
+        {% comment %} Google Fonts Block {% endcomment %}
+        {% block google_fonts %}{% endblock google_fonts %}
+
+        {% comment %} Vendor CSS Files Block {% endcomment %}
+        {% block vendor_css_files %}{% endblock vendor_css_files %}
+
+        {% comment %} Template Main CSS Files Block {% endcomment %}
+        {% block template_main_css_file %}{% endblock template_main_css_file %}
+
+    </head>
+
+    <body>
+
+        {% comment %} template main section block {% endcomment %}
+        {% block template_main_section %}{% endblock template_main_section %}
+        
+
+        {% comment %} template footer section block {% endcomment %}
+        {% block template_footer_section %}{% endblock template_footer_section %}
+
+
+        {% comment %} template arrow up short block {% endcomment %}
+        {% block template_arrow_up_short_section %}{% endblock template_arrow_up_short_section %}
+
+
+        {% comment %} vendor js files block {% endcomment %}
+        {% block vendor_js_files %}{% endblock vendor_js_files %}
+
+
+        {% comment %} template main js files blcok {% endcomment %}
+        {% block template_main_js_file %}{% endblock template_main_js_file %}
+
+    </body>
+</html>

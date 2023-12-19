@@ -1,0 +1,34 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block google_fonts %}
+
+{% include "dashboard/includes/common/google-fonts.html" %}
+
+{% endblock google_fonts %}
+
+
+{% block vendor_css_files %}
+
+{% include "dashboard/includes/common/vendor-css.html" %}
+
+{% endblock vendor_css_files %}
+
+
+{% block template_main_css_file %}
+
+{% include "dashboard/includes/common/main-css.html" %}
+
+{% endblock template_main_css_file %}
+
+
+{% block template_main_section %}
+
+<main>
+
+  {% include "dashboard/includes/pages/404/content.html" %}
+
+</main>
+
+{% endblock template_main_section %}
+
